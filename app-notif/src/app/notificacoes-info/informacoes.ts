@@ -1,24 +1,28 @@
 interface notificacao {
     titulo: string;
     subtitulo: string;
-    data: string 
-  }
+    data: string;
+    lido: boolean
+}
 
-export const listaNotificacoes: notificacao[] = [
+export let listaNotificacoes: notificacao[] = [
     {
-    titulo: "Ifood",
-    subtitulo: "Promoções imperdíveis" ,
-    data: "30/11"
-  },
-  {
-    titulo: "Whatsapp",
-    subtitulo: "Nova mensagem!" ,
-    data: "29/11"
-  },
-  {
-    titulo: "Twitter",
-    subtitulo: "@fulano curtiu seu post." ,
-    data: "29/11"
-  }
+        titulo: "Ifood",
+        subtitulo: "Promoções imperdíveis",
+        data: "30/11",
+        lido: false
+    },
+    {
+        titulo: "Whatsapp",
+        subtitulo: "Nova mensagem!",
+        data: "29/11",
+        lido: false
+    },
+    {
+        titulo: "Twitter",
+        subtitulo: "@fulano curtiu seu post.",
+        data: "29/11",
+        lido: false
+    }
 ]
 

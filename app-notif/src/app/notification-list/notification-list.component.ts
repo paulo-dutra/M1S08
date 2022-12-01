@@ -7,4 +7,12 @@ import { listaNotificacoes } from '../notificacoes-info/informacoes';
 })
 export class NotificationListComponent {
   infoNotific = listaNotificacoes
+
+  statusLido(titulo: string) {
+    this.infoNotific.forEach(element => {
+      if (element.titulo === titulo) {
+        element.lido ? element.lido = false : element.lido = true
+      }
+    });
+  }
 }
